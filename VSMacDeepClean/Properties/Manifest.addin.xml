@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+   <Extension path = "/MonoDevelop/Ide/Commands">
+       <Command id = "VSMacDeepClean.DeepCleanCommands.DeleteBinObjDirs"
+           _label = "Delete /bin /obj directories"
+           defaultHandler = "VSMacDeepClean.DeleteBinObjDirsHandler" />
+      <Command id = "VSMacDeepClean.DeepCleanCommands.DeletePackagesDir"
+           _label = "Delete /packages directory"
+           defaultHandler = "VSMacDeepClean.DeletePackagesDirHandler" />
+   </Extension>
+
+   <Extension path = "/MonoDevelop/Ide/MainMenu/Build">
+       <CommandItem id="VSMacDeepClean.DeepCleanCommands.DeleteBinObjDirs" />
+       <CommandItem id="VSMacDeepClean.DeepCleanCommands.DeletePackagesDir" />
+   </Extension>
+</ExtensionModel>
