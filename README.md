@@ -1,6 +1,7 @@
 # DeepClean
 
-Extension for Visual Studio for macOS that allows you to delete /bin, /obj and /packages directories via Build menu.
+Extension for Visual Studio for macOS that allows you to delete /bin, /obj and /packages directories via Build menu.<br/>
+**This extension is making it's first steps, please make sure you have a back up of your code before using it!**
 
 ## Features
 
