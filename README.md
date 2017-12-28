@@ -2,6 +2,14 @@
 
 Extension for Visual Studio for macOS that allows you to delete /bin, /obj and /packages directories via Build menu.
 
+## Features
+
+Currently 2 commands are available under Build menu:
+- Delete /bin /obj directories
+- Delete /pacakges directory
+
+Please note that after deleting /packages directory you will have to restore nuget packages for your workspace.
+
 ## Getting Started
 
 Currenlty the extension is not distributed on the official channels, so in order to use it you will have to download and install the mpack manually.
