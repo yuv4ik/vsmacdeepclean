@@ -2,15 +2,23 @@
 <ExtensionModel>
    <Extension path = "/MonoDevelop/Ide/Commands">
        <Command id = "VSMacDeepClean.DeepCleanCommands.DeleteBinObjDirs"
-           _label = "Delete /bin /obj directories"
+           _label = "Delete /bin /obj Directories"
            defaultHandler = "VSMacDeepClean.DeleteBinObjDirsHandler" />
       <Command id = "VSMacDeepClean.DeepCleanCommands.DeletePackagesDir"
-           _label = "Delete /packages directory"
+           _label = "Delete /packages Directory"
            defaultHandler = "VSMacDeepClean.DeletePackagesDirHandler" />
+        <!-- OpenTerminalHandler -->
+       <Command id = "VSMacDeepClean.DeepCleanCommands.OpenTerminalAtDirectory"
+           _label = "New Terminal at Directory"
+           defaultHandler = "VSMacDeepClean.OpenTerminalHandler" />
    </Extension>
 
    <Extension path = "/MonoDevelop/Ide/MainMenu/Build">
        <CommandItem id="VSMacDeepClean.DeepCleanCommands.DeleteBinObjDirs" />
        <CommandItem id="VSMacDeepClean.DeepCleanCommands.DeletePackagesDir" />
    </Extension>
+   <Extension path = "/MonoDevelop/Ide/ContextMenu/ProjectPad">
+       <CommandItem id="VSMacDeepClean.DeepCleanCommands.OpenTerminalAtDirectory" disabledVisible="false" />
+   </Extension>
+        
 </ExtensionModel>

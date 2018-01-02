@@ -8,7 +8,7 @@ namespace VSMacDeepClean
         protected ProjectOperations ProjectOperations => IdeApp.ProjectOperations;
 
         // Shoud be enabled only when the workspace is opened
-        protected bool IsCommandEnabled() => IdeApp.Workspace.IsOpen;
+        protected bool IsWorkspaceOpen() => IdeApp.Workspace.IsOpen;
 
         protected bool IsItSafeToExecuteTheCommand()
         {

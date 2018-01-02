@@ -26,7 +26,7 @@ namespace VSMacDeepClean
 
         protected override void Update(CommandInfo info)
         {
-            info.Enabled = IsCommandEnabled();
+            info.Enabled = IsWorkspaceOpen();
         }
     }
 }
