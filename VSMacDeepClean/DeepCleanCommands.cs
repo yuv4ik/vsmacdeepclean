@@ -3,6 +3,7 @@
     public enum DeepCleanCommands
     {
         DeleteBinObjDirs,
-        DeletePackagesDir
+        DeletePackagesDir,
+        OpenTerminalAtDirectory
     }
 }
