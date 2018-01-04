@@ -8,7 +8,7 @@ namespace VSMacDeepClean
     {
         protected override void Run()
         {
-            if (!IsItSafeToExecuteTheCommand())
+            if (!ProjectIsNotBuildingOrRunning())
                 return;
 
             IdeApp.Workbench.StatusBar.BeginProgress("Deleting /bin & /obj directories");

@@ -11,6 +11,9 @@
        <Command id = "VSMacDeepClean.DeepCleanCommands.OpenTerminalAtDirectory"
            _label = "New Terminal at Directory"
            defaultHandler = "VSMacDeepClean.OpenTerminalHandler" />
+       <Command id = "VSMacDeepClean.DeepCleanCommands.ClearNugetCache"
+           _label = "Clear NuGet Cache"
+           defaultHandler = "VSMacDeepClean.ClearNugetCacheHandler" />
    </Extension>
 
    <Extension path = "/MonoDevelop/Ide/MainMenu/Build">
@@ -20,5 +23,9 @@
    <Extension path = "/MonoDevelop/Ide/ContextMenu/ProjectPad">
        <CommandItem id="VSMacDeepClean.DeepCleanCommands.OpenTerminalAtDirectory" disabledVisible="false" />
    </Extension>
+   <Extension path = "/MonoDevelop/Ide/MainMenu/Tools">
+        <SeparatorItem id = "DisconnectSeparator" _label="DeepClean"/>
+        <CommandItem id="VSMacDeepClean.DeepCleanCommands.ClearNugetCache" />
+    </Extension>
         
 </ExtensionModel>
