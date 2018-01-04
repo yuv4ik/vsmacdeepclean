@@ -10,7 +10,7 @@ namespace VSMacDeepClean
         // Shoud be enabled only when the workspace is opened
         protected bool IsWorkspaceOpen() => IdeApp.Workspace.IsOpen;
 
-        protected bool IsItSafeToExecuteTheCommand()
+        protected bool ProjectIsNotBuildingOrRunning()
         {
             var isBuild = ProjectOperations.IsBuilding(ProjectOperations.CurrentSelectedSolution);
             var isRun = ProjectOperations.IsRunning(ProjectOperations.CurrentSelectedSolution);

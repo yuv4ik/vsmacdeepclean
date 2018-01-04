@@ -4,6 +4,7 @@
     {
         DeleteBinObjDirs,
         DeletePackagesDir,
-        OpenTerminalAtDirectory
+        OpenTerminalAtDirectory,
+        ClearNugetCache
     }
 }
