@@ -5,6 +5,7 @@
         DeleteBinObjDirs,
         DeletePackagesDir,
         OpenTerminalAtDirectory,
-        ClearNugetCache
+        ClearNugetCache,
+        ClearDroidLibCache
     }
 }
