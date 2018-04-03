@@ -25,7 +25,15 @@ Please note that after manipulating NuGet cache, both local or global, you will 
 
 Currently the extension is not distributed on the official channels, so in order to use it you will have to download and install the mpack manually.
 
-### Installing
+## Installation
+
+### Automatic
+
+You can download and install DeepClean using the Extension Manager of Visual Studio for Mac by searching the Gallery.
+
+### Manual
+
+Alternatively you can download and install it manually using the folowing steps:
 
 Download the latest version from [here](https://github.com/yuv4ik/vsmacdeepclean/tree/master/Versions). <br/>
 Open Visual Studio for macOS and open the "Extensions..." menu<br/>
