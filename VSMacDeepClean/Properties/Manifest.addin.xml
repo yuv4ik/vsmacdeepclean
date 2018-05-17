@@ -21,6 +21,10 @@
         <Command id = "VSMacDeepClean.DeepCleanCommands.ClearDroidLibCache"
            _label = "Clear Android Library Cache"
            defaultHandler = "VSMacDeepClean.DroidLibCacheHandler" />
+        <!-- ClearUnusedLibraryFrameworks -->
+        <Command id = "VSMacDeepClean.DeepCleanCommands.ClearUnusedLibraryFrameworks"
+           _label = "Clear unused framework libraries"
+           defaultHandler = "VSMacDeepClean.ClearUnusedLibraryFrameworksHandler" />
    </Extension>
 
    <!-- Build Menu -->
@@ -37,6 +41,7 @@
         <SeparatorItem id="DisconnectSeparator" _label="DeepClean"/>
         <CommandItem id="VSMacDeepClean.DeepCleanCommands.ClearNugetCache" />
         <CommandItem id="VSMacDeepClean.DeepCleanCommands.ClearDroidLibCache" />
+        <CommandItem id="VSMacDeepClean.DeepCleanCommands.ClearUnusedLibraryFrameworks" />
         <SeparatorItem id="DisconnectSeparator"/>
     </Extension>
         
