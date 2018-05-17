@@ -87,14 +87,14 @@ namespace VSMacDeepClean
             if (current.Exists && current.IsSymbolicLink)
             {
                 excludeDirectories.Add(current.FullName);
-            }
 
-            if (current.HasContents &&
-                current.GetContents() is UnixFileSystemInfo currentTarget &&
-                currentTarget.Exists &&
-                currentTarget.IsDirectory)
-            {
-                excludeDirectories.Add(currentTarget.FullName);
+                if (current.HasContents &&
+                    current.GetContents() is UnixFileSystemInfo currentTarget &&
+                    currentTarget.Exists &&
+                    currentTarget.IsDirectory)
+                {
+                    excludeDirectories.Add(currentTarget.FullName);
+                }
             }
 
             directories = directories.Except(excludeDirectories);
