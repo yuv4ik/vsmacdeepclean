@@ -9,4 +9,7 @@
     <None Remove="VSMacDeepClean.VSMacDeepClean_1.0\VSMacDeepClean.dll" />
     <None Remove="VSMacDeepClean.VSMacDeepClean_1.0\addin.info" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Posix" />
+  </ItemGroup>
 </Project>
