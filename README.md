@@ -27,10 +27,6 @@ Under the "Tools" menu:
 
 Please note that after manipulating NuGet cache, both local or global, you will have to restore NuGet packages for your workspace.
 
-## Getting Started
-
-Currently the extension is not distributed on the official channels, so in order to use it you will have to download and install the mpack manually.
-
 ## Installation
 
 ### Automatic
