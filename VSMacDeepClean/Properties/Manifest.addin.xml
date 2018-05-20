@@ -23,7 +23,7 @@
            defaultHandler = "VSMacDeepClean.DroidLibCacheHandler" />
         <!-- ClearUnusedLibraryFrameworks -->
         <Command id = "VSMacDeepClean.DeepCleanCommands.ClearUnusedLibraryFrameworks"
-           _label = "Clear unused framework libraries"
+           _label = "Clear Unused Framework Libraries"
            defaultHandler = "VSMacDeepClean.ClearUnusedLibraryFrameworksHandler" />
    </Extension>
 
