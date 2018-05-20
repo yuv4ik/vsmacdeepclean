@@ -18,6 +18,12 @@ Under the "Tools" menu:
     * Delete the next directories ~/.nuget/packages & ~/.local/share/NuGet
 * Clear Android Library Cache
     * Delete all the directories within ~/.local/share/Xamarin that matching the next search pattern 'Xamarin.*;
+* Clear Unused Framework Libraries
+    * Delete all except current version within:
+        * /Library/Frameworks/Mono.framework/Versions
+        * /Library/Frameworks/Xamarin.Android.framework/Versions
+        * /Library/Frameworks/Xamarin.iOS.framework/Versions
+        * /Library/Frameworks/Xamarin.Mac.framework/Versions
 
 Please note that after manipulating NuGet cache, both local or global, you will have to restore NuGet packages for your workspace.
 
@@ -58,6 +64,11 @@ While development I used the next articles:<br/>
 [How to Write Add-ins of Visual Studio for Mac](https://blog.lextudio.com/how-to-write-add-ins-of-visual-studio-for-mac-ee6113db5ddf)<br/>
 [Extending Visual Studio for Mac Walkthrough](https://docs.microsoft.com/en-us/visualstudio/mac/extending-visual-studio-mac-walkthrough)<br/>
 [Cleaning Up Space on Your Xamarin Development Machine](https://montemagno.com/cleanup-up-space-xamarin-dev-machine/)
+
+## Contributors
+
+Big thanks to our contributors:
+* [Giorgos Sgouridis](https://github.com/sgou)
 
 ## License
 
