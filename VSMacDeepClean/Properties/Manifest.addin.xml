@@ -1,48 +1,41 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ExtensionModel>
-   <Extension path = "/MonoDevelop/Ide/Commands">
+    <Extension path="/MonoDevelop/Ide/Commands">
         <!-- DeleteBinObjDirs -->
-        <Command id = "VSMacDeepClean.DeepCleanCommands.DeleteBinObjDirs"
-           _label = "Delete /bin /obj Directories"
-           defaultHandler = "VSMacDeepClean.DeleteBinObjDirsHandler" />
+        <Command id="VSMacDeepClean.DeepCleanCommands.DeleteBinObjDirs" _label="Delete /bin /obj Directories" defaultHandler="VSMacDeepClean.DeleteBinObjDirsHandler" />
         <!-- DeletePackagesDir -->
-        <Command id = "VSMacDeepClean.DeepCleanCommands.DeletePackagesDir"
-           _label = "Delete /packages Directory"
-           defaultHandler = "VSMacDeepClean.DeletePackagesDirHandler" />
+        <Command id="VSMacDeepClean.DeepCleanCommands.DeletePackagesDir" _label="Delete /packages Directory" defaultHandler="VSMacDeepClean.DeletePackagesDirHandler" />
         <!-- OpenTerminal -->
-        <Command id = "VSMacDeepClean.DeepCleanCommands.OpenTerminalAtDirectory"
-           _label = "New Terminal at Directory"
-           defaultHandler = "VSMacDeepClean.OpenTerminalHandler" />
+        <Command id="VSMacDeepClean.DeepCleanCommands.OpenTerminalAtDirectory" _label="New Terminal at Directory" defaultHandler="VSMacDeepClean.OpenTerminalHandler" />
         <!-- ClearNugetCache -->
-        <Command id = "VSMacDeepClean.DeepCleanCommands.ClearNugetCache"
-           _label = "Clear NuGet Cache"
-           defaultHandler = "VSMacDeepClean.ClearNugetCacheHandler" />
+        <Command id="VSMacDeepClean.DeepCleanCommands.ClearNugetCache" _label="Clear NuGet Cache" defaultHandler="VSMacDeepClean.ClearNugetCacheHandler" />
         <!-- DroidLibCache -->
-        <Command id = "VSMacDeepClean.DeepCleanCommands.ClearDroidLibCache"
-           _label = "Clear Android Library Cache"
-           defaultHandler = "VSMacDeepClean.DroidLibCacheHandler" />
+        <Command id="VSMacDeepClean.DeepCleanCommands.ClearDroidLibCache" _label="Clear Android Library Cache" defaultHandler="VSMacDeepClean.DroidLibCacheHandler" />
         <!-- ClearUnusedLibraryFrameworks -->
-        <Command id = "VSMacDeepClean.DeepCleanCommands.ClearUnusedLibraryFrameworks"
-           _label = "Clear Unused Framework Libraries"
-           defaultHandler = "VSMacDeepClean.ClearUnusedLibraryFrameworksHandler" />
-   </Extension>
-
-   <!-- Build Menu -->
-   <Extension path="/MonoDevelop/Ide/MainMenu/Build">
-       <CommandItem id="VSMacDeepClean.DeepCleanCommands.DeleteBinObjDirs" />
-       <CommandItem id="VSMacDeepClean.DeepCleanCommands.DeletePackagesDir" />
-   </Extension>
-   <!-- Project Pad -->
-   <Extension path="/MonoDevelop/Ide/ContextMenu/ProjectPad">
-       <CommandItem id="VSMacDeepClean.DeepCleanCommands.OpenTerminalAtDirectory" disabledVisible="false" />
-   </Extension>
-   <!-- Tools Menu -->
-   <Extension path="/MonoDevelop/Ide/MainMenu/Tools">
-        <SeparatorItem id="DisconnectSeparator" _label="DeepClean"/>
+        <Command id="VSMacDeepClean.DeepCleanCommands.ClearUnusedLibraryFrameworks" _label="Clear Unused Framework Libraries" defaultHandler="VSMacDeepClean.ClearUnusedLibraryFrameworksHandler" />
+        <!-- DeleteCurrentSolution -->
+        <Command id="VSMacDeepClean.DeepCleanCommands.DeleteSolution" _label="Delete Solution" defaultHandler="VSMacDeepClean.DeleteSolutionHandler" />
+    </Extension>
+    <!-- File Menu -->
+    <Extension path="/MonoDevelop/Ide/MainMenu/File">
+        <SeparatorItem id="DisconnectSeparator" _label="DeepClean" />
+        <CommandItem id="VSMacDeepClean.DeepCleanCommands.DeleteSolution" />
+    </Extension>
+    <!-- Build Menu -->
+    <Extension path="/MonoDevelop/Ide/MainMenu/Build">
+        <CommandItem id="VSMacDeepClean.DeepCleanCommands.DeleteBinObjDirs" />
+        <CommandItem id="VSMacDeepClean.DeepCleanCommands.DeletePackagesDir" />
+    </Extension>
+    <!-- Project Pad -->
+    <Extension path="/MonoDevelop/Ide/ContextMenu/ProjectPad">
+        <CommandItem id="VSMacDeepClean.DeepCleanCommands.OpenTerminalAtDirectory" disabledVisible="false" />
+    </Extension>
+    <!-- Tools Menu -->
+    <Extension path="/MonoDevelop/Ide/MainMenu/Tools">
+        <SeparatorItem id="DisconnectSeparator" _label="DeepClean" />
         <CommandItem id="VSMacDeepClean.DeepCleanCommands.ClearNugetCache" />
         <CommandItem id="VSMacDeepClean.DeepCleanCommands.ClearDroidLibCache" />
         <CommandItem id="VSMacDeepClean.DeepCleanCommands.ClearUnusedLibraryFrameworks" />
-        <SeparatorItem id="DisconnectSeparator"/>
+        <SeparatorItem id="DisconnectSeparator" />
     </Extension>
-        
 </ExtensionModel>
