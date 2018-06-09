@@ -5,6 +5,9 @@ Is a Visual Studio for macOS add-in / extension that let you easily clean projec
 
 ## Features
 
+Under the "File" menu:
+* Delete Solution
+
 Under the "Build" menu:
 * Delete /bin /obj directories
     * Recursively delete all the /bin & /obj directories on the solution level

@@ -4,7 +4,7 @@ using Mono.Addins.Description;
 [assembly: Addin(
     "VSMacDeepClean",
     Namespace = "VSMacDeepClean",
-    Version = "1.2.3"
+    Version = "1.2.4"
 )]
 
 [assembly: AddinName("DeepClean")]

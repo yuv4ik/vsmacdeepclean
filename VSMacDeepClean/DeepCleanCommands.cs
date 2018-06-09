@@ -6,6 +6,7 @@
         DeletePackagesDir,
         OpenTerminalAtDirectory,
         ClearNugetCache,
-        ClearDroidLibCache
+        ClearDroidLibCache,
+        DeleteSolution
     }
 }
